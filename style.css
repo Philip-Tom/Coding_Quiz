@@ -1,0 +1,215 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+body {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.quiz-container {
+    border-radius: 10px;
+    width: 500px;
+    height: 350px;
+    background-color: white;
+    position: relative;
+    display: none;
+}
+
+#quiz-question {
+    font-size: 1.5rem;
+    font-weight: 300;
+    padding: 20px;
+    text-align: center;
+}
+
+.options {
+    margin-left: 30px;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+#divider {
+    background: grey;
+    width: 30rem;
+    height: 0.1rem;
+    opacity: 0.4;
+    display: none;
+
+}
+
+
+.option {
+    margin-bottom: 15px;
+    width: fit-content;
+    height: 1.5rem;
+    padding: 3px;
+    /* Increased padding for better visual */
+    cursor: pointer;
+    background-color: purple;
+    /* Purple background color */
+    color: white;
+    /* White text color */
+    border: none;
+    /* Remove border */
+    border-radius: 5px;
+    /* Add border-radius for rounded corners */
+    transition: background-color 0.3s;
+    /* Smooth transition for background color */
+}
+
+.option:hover {
+    background-color: darkpurple;
+    /* Darker purple on hover */
+}
+
+#feedback {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+
+
+
+.starting-quiz {
+    text-align: center;
+    position: relative;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    display: block;
+    left: -100px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: purple;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: darkpurple;
+}
+
+#highestScoreButton {
+    position: relative;
+    top: -48%;
+    left: -25%;
+    color: red;
+    font-size: 25px;
+
+}
+
+#timer {
+    position: relative;
+    left: 54%;
+    bottom: 48%;
+    font-size: 25px;
+}
+
+
+.final_result {
+    width: 20%;
+    padding: 10px;
+    /* Add padding for better spacing */
+    margin-right: 10px;
+    /* Add margin to separate from other elements */
+    border: 1px solid #ddd;
+    /* Add a border for a cleaner look */
+    border-radius: 5px;
+    /* Add border-radius for rounded corners */
+    display: none;
+
+}
+
+.submitBtn {
+    background-color: blueviolet;
+    color: white;
+    /* Add text color for better visibility */
+    padding: 3px;
+    /* Add padding for better appearance */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.in_line {
+    display: flex;
+    align-items: center;
+    /* Align items vertically in the flex container */
+}
+
+.higest_score {
+    text-align: center;
+    padding: 20px;
+    display: none;
+}
+
+.score_end {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.btn_group {
+    display: flex;
+    justify-content: center;
+}
+
+.go_back,
+.clr_highScore {
+
+    background-color: darkviolet;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 10px;
+    /* Add margin to separate the buttons */
+}
+
+.enterName {
+    border: 0.5 solid black;
+    margin-right: 10px;
+    outline-offset: none;
+}
+
+.enterName:focus {
+    outline: none !important;
+    border-color: #719ECE;
+    box-shadow: 0 0 10px #719ECE;
+}
+
+.go_back:hover,
+.clr_highScore:hover {
+    background-color: violet;
+    /* Darker violet on hover */
+}
